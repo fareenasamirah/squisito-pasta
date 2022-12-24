@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition:all .2s linear;
+}
+
+.main {
+  text-align: center;
+}
+
+section {
+  padding: 2rem 10%;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  min-height: 100vh;
+  align-items: center;
+  background: url(images/photo-1582738411706-bfc8e691d1c2.avif) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .content {
+  flex:1 1 40rem;
+  padding-top: 6.5rem;
+}
+
+.home .imagehome {
+  flex:1 1 40rem;
+}
+
+.home .imagehome img {
+  width: 100%;
+  padding:1rem;
+  animation:float 3s linear infinite;
+
+}
+
+/* @keyframes float {
+  0%, 100% {
+    transform: translateY(0rem);S
+  }
+  50% {
+    transform: translateY(3rem);S
+  }
+} */
+.home .content h3 {
+  font-size: 5rem;
+  color: rgb(70, 9, 70);
+  text-decoration: none;
+}
+
+nav {
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.navtop {
+    flex:1;
+    text-align: right;
+}
+
+.navtop ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navtop ul li a {
+    color: rgb(70, 9, 70);
+    text-decoration: none;
+}
+
+.book-table {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.book-table h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.book-table p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.book-table form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-table label,
+.book-table input[type="submit"] {
+  width: 100%;
+  max-width: 300px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.book-table label {
+  text-align: left;
+}
+
+.book-table input[type="text"],
+.book-table input[type="email"],
+.book-table input[type="tel"],
+.book-table input[type="date"],
+.book-table input[type="time"],
+.book-table input[type="number"] {
+  background-color: #f8f8f8;
+}
+
+.book-table input[type="submit"] {
+  background-color: #966f43;
+  color: #fff;
+  cursor: pointer;
+}
+
+footer {
+  background-color:#fff0f0;
+  color: black;
+  padding: 20px;
+  flex:1;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+footer ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+footer ul li a {
+  color: rgb(70, 9, 70);
+  text-decoration: none;
+}
+
+.menu-image {
+  width: 150px;
+  height: 200px;
+}
+
+.menu h2 {
+    text-align: center;
+}
+
+.menu table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto;
+  border: transparent;
+}
+.btn a {
+  text-align: center;
+}
+
+.menu th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.menu tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.menu th {
+  background-color: #a08552;
+  color: white;
+}
+
+.menu img.menu-image {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+input[type="submit"] {
+  width: 50%;
+  margin-top: 20px;
+  background-color: #966f43;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.order h2, p {
+  text-align: center;
+}
+.order form {
+  width: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.order input, 
+.order textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.order table {
+  border-collapse: collapse;
+  width: 100%;
+  align-items: center;
+}
+
+.order th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.order tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.order th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.book-table form {
+  width: 80%;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-table input, 
+.book-table textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.book-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.book-table th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.book-table str:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.book-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.contactus h2, p {
+  text-align: center;
+}
+.contactus form {
+  width: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactus label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contactus input, 
+.contactus textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contactus table {
+  border-collapse: collapse;
+  width: 100%;
+  align-items: center;
+}
+
+.contactus th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.contactus tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.contactus th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button{
+  display: inline-block;
+  padding:.8rem 3rem;
+  border:.2rem solid var(--red);
+  color:var(--red);
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  margin-top: 1rem;
+}
+
+.button::before{
+  content: '';
+  position: absolute;
+  top:0; right: 0;
+  width:0%;
+  height:100%;
+  background:var(--red);
+  transition: .3s linear;
+  z-index: -1;
+}
+
+.button:hover::before{
+  width:100%;
+  left: 0;
+}
+
+.button:hover{
+  color:gray;
+}
+
+
+.interest {
+  text-align: center;
+}
