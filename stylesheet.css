@@ -24,7 +24,7 @@ section {
   gap:1.5rem;
   min-height: 100vh;
   align-items: center;
-  background: url(images/photo-1582738411706-bfc8e691d1c2.avif) no-repeat;
+  background: url(photo-1582738411706-bfc8e691d1c2.avif) no-repeat;
   background-size: cover;
   background-position: center;
 }
